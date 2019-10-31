@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".View_weekly">
+
+    <android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#240b36"
+        tools:context=".View_weekly">
+
+        <TextView
+            android:id="@+id/WEEKtextView30"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="8dp"
+            android:text="Week of 6/10/2019 - 6/16/2019"
+            android:textAlignment="center"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textStyle="bold|italic"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.271" />
+
+        <ScrollView
+            android:id="@+id/WEEKscrollView2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="8dp"
+            android:isScrollContainer="true"
+            android:overScrollMode="ifContentScrolls"
+            android:scrollbarStyle="insideInset"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.333"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/WEEKtextView30"
+            app:layout_constraintVertical_bias="0.115">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TableLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginBottom="8dp"
+                    android:background="@drawable/general_tboarder"
+                    android:gravity="start"
+                    android:stretchColumns="1"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintVertical_bias="0.49">
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="66dp"
+                        android:divider="@color/white"
+                        android:weightSum="3">
+
+                        <TextView
+                            android:id="@+id/WEEKtextView5"
+                            android:layout_width="191dp"
+                            android:layout_height="match_parent"
+                            android:layout_column="0"
+                            android:layout_weight="1"
+                            android:background="@drawable/general_tboarder"
+                            android:gravity="center"
+                            android:text="Courses Title"
+                            android:textColor="@color/white"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/WEEKtextView13"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_column="1"
+                            android:layout_weight="1"
+                            android:background="@drawable/general_tboarder"
+                            android:gravity="center"
+                            android:text="Start\nDate"
+                            android:textColor="@color/white"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/WEEKtextView12"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_column="2"
+                            android:layout_weight="1"
+                            android:background="@drawable/general_tboarder"
+                            android:gravity="center"
+                            android:text="End\nDate"
+                            android:textColor="@color/white"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:divider="@color/white">
+
+                        <TextView
+                            android:id="@+id/WEEKtextView8"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_column="0"
+                            android:layout_weight="1"
+                            android:background="@drawable/general_tboarder"
+                            android:gravity="start"
+                            android:paddingTop="4dp"
+                            android:textColor="@color/white"
+                            android:textSize="13sp" />
+
+                        <TextView
+                            android:id="@+id/WEEKtextView15"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_column="1"
+                            android:layout_weight="1"
+                            android:background="@drawable/general_tboarder"
+                            android:gravity="center|start"
+                            android:paddingTop="4dp"
+                            android:textColor="@color/lightgray"
+                            android:textSize="13sp" />
+
+                        <TextView
+                            android:id="@+id/WEEKtextView16"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_column="2"
+                            android:layout_weight="1"
+                            android:background="@drawable/general_tboarder"
+                            android:gravity="center|start"
+                            android:paddingTop="4dp"
+                            android:textColor="@color/lightgray"
+                            android:textSize="13sp" />
+                    </TableRow>
+
+                </TableLayout>
+
+                <TextView
+                    android:id="@+id/WEEKtextView32"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="40dp"
+                    android:gravity="center_horizontal"
+                    android:text="This page displays your scheduled courses start and end date."
+                    android:textColor="@color/lightgray"
+                    android:textSize="18sp" />
+
+            </LinearLayout>
+        </ScrollView>
+
+        <Button
+            android:id="@+id/WEEKbutton2"
+            android:layout_width="93dp"
+            android:layout_height="48dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="40dp"
+            android:background="@drawable/btn_bg"
+            android:text="Previous\nWeek"
+            android:textColor="@color/white"
+            android:textSize="14sp"
+            app:layout_constraintBottom_toTopOf="@+id/WEEKtextView30"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.097"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <Button
+            android:id="@+id/WEEKbutton3"
+            android:layout_width="93dp"
+            android:layout_height="48dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="24dp"
+            android:layout_marginBottom="40dp"
+            android:background="@drawable/btn_bg"
+            android:text="Next\nWeek"
+            android:textColor="@color/white"
+            android:textSize="14sp"
+            app:layout_constraintBottom_toTopOf="@+id/WEEKtextView30"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.795"
+            app:layout_constraintStart_toEndOf="@+id/WEEKbutton2" />
+
+    </android.support.constraint.ConstraintLayout>
+</FrameLayout>

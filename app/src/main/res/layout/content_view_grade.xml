@@ -1,0 +1,377 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ViewGrade">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#240b36"
+        tools:context=".ViewGrade">
+
+        <TextView
+            android:id="@+id/Gradeidnum"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:text="ID : "
+            android:textColor="@color/white"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/Gradesname"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.068"
+            app:layout_constraintStart_toEndOf="@+id/Gradesname"
+            app:layout_constraintTop_toTopOf="@+id/Gradesname" />
+
+        <TextView
+            android:id="@+id/Gradesid"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:text="Student ID"
+            android:textColor="@color/lightgray"
+            android:textSize="18dp"
+            android:textStyle="italic"
+            app:layout_constraintBottom_toBottomOf="@+id/Gradeidnum"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.147"
+            app:layout_constraintStart_toEndOf="@+id/Gradeidnum"
+            app:layout_constraintTop_toTopOf="@+id/Gradeidnum" />
+
+        <TextView
+            android:id="@+id/Gradename"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="40dp"
+            android:text="Name : "
+            android:textColor="@color/white"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/GradetextView7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="32dp"
+            android:layout_marginEnd="8dp"
+            android:text="Term :"
+            android:textColor="@color/white"
+            android:textColorHighlight="@color/colorPrimary"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.039"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/Gradename" />
+
+        <Spinner
+            android:id="@+id/Gradespin"
+            android:layout_width="0dp"
+            android:layout_height="35dp"
+            android:layout_marginStart="8dp"
+
+            android:layout_marginEnd="8dp"
+            android:background="@drawable/spinner_border"
+            android:spinnerMode="dropdown"
+            app:layout_constraintBottom_toBottomOf="@+id/GradetextView7"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.32"
+            app:layout_constraintStart_toEndOf="@+id/GradetextView7"
+            app:layout_constraintTop_toTopOf="@+id/GradetextView7"
+            app:layout_constraintVertical_bias="0.0"
+            tools:targetApi="lollipop">
+
+        </Spinner>
+
+        <Button
+            android:id="@+id/vg_btn"
+            android:layout_width="131dp"
+            android:layout_height="46dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="35dp"
+            android:layout_marginEnd="8dp"
+            android:background="@drawable/btn_bg"
+            android:text="Show My Grade"
+            android:textColor="@color/white"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.875"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/GradetextView7" />
+
+        <ScrollView
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/vg_btn">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <TableLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginBottom="8dp"
+                    android:gravity="center"
+                    android:stretchColumns="1"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/vg_btn"
+                    app:layout_constraintVertical_bias="0.49">
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="66dp"
+                        android:divider="@color/white"
+                        android:weightSum="2">
+
+                        <TextView
+                            android:id="@+id/GradetextView5"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_column="0"
+                            android:layout_weight="1"
+                            android:gravity="end"
+                            android:text="Cumulative Grade :"
+                            android:textColor="@color/white"
+                            android:textSize="23sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/GradetextView6"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_column="1"
+                            android:layout_weight="1"
+                            android:gravity="center_horizontal"
+                            android:textColor="@color/lightgray"
+                            android:textSize="23sp" />
+
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:divider="@color/white">
+
+                        <TextView
+                            android:id="@+id/GradetextView8"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_column="0"
+                            android:layout_weight="1"
+                            android:gravity="end"
+                            android:text="Term Grade :"
+                            android:textColor="@color/white"
+                            android:textSize="23sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/GradetextView9"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_column="1"
+                            android:layout_weight="1"
+                            android:gravity="center_horizontal"
+                            android:textColor="@color/lightgray"
+                            android:textSize="23sp" />
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="30dp"
+                        android:divider="@color/white">
+
+                        <TextView
+                            android:id="@+id/GradetextView39"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_column="0"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_weight="1"
+                            android:gravity="end"
+                            android:text="Academic Standing :"
+                            android:textColor="@color/white"
+                            android:textSize="23sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/GradetextView49"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_column="1"
+                            android:layout_gravity="center"
+                            android:layout_weight="1"
+                            android:textColor="@color/lightgray"
+                            android:textSize="23sp" />
+
+                    </TableRow>
+                </TableLayout>
+
+                <TableLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="40dp"
+                    android:background="@drawable/general_tboarder">
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="66dp"
+                        android:divider="@color/white"
+                        android:weightSum="4">
+
+                        <TextView
+                            android:id="@+id/GradetextView10"
+                            android:layout_width="137dp"
+                            android:layout_height="match_parent"
+                            android:layout_column="0"
+                            android:layout_weight="1"
+                            android:background="@drawable/general_tboarder"
+                            android:gravity="center"
+                            android:text="Term Courses"
+                            android:textColor="@color/white"
+                            android:textSize="15sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/GradetextView11"
+                            android:layout_width="80dp"
+                            android:layout_height="match_parent"
+                            android:layout_column="1"
+                            android:layout_weight="1"
+                            android:background="@drawable/general_tboarder"
+                            android:gravity="center"
+                            android:text="Units\n(ECTS)"
+                            android:textColor="@color/white"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/Gradetext1"
+                            android:layout_width="77dp"
+                            android:layout_height="match_parent"
+                            android:layout_column="2"
+                            android:layout_weight="1"
+                            android:background="@drawable/general_tboarder"
+                            android:gravity="center"
+                            android:text="Grade"
+                            android:textColor="@color/white"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/Gradetext2"
+                            android:layout_width="75dp"
+                            android:layout_height="match_parent"
+                            android:layout_column="1"
+                            android:layout_weight="1"
+                            android:background="@drawable/general_tboarder"
+                            android:gravity="center"
+                            android:text="Grade\nPoints"
+                            android:textColor="@color/white"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="66dp"
+                        android:divider="@color/white"
+                        android:weightSum="4">
+
+                        <TextView
+                            android:id="@+id/Gradetext10"
+                            android:layout_width="137dp"
+                            android:layout_height="wrap_content"
+                            android:layout_column="0"
+                            android:layout_weight="1"
+                            android:background="@drawable/general_tboarder"
+                            android:gravity="center"
+                            android:textColor="@color/lightgray"
+                            android:textSize="13sp" />
+
+                        <TextView
+                            android:id="@+id/Gradetext11"
+                            android:layout_width="80dp"
+                            android:layout_height="wrap_content"
+                            android:layout_column="1"
+                            android:layout_weight="1"
+                            android:background="@drawable/general_tboarder"
+                            android:gravity="center"
+                            android:textColor="@color/lightgray"
+                            android:textSize="13sp" />
+
+                        <TextView
+                            android:id="@+id/Gradetext12"
+                            android:layout_width="77dp"
+                            android:layout_height="wrap_content"
+                            android:layout_column="2"
+                            android:layout_weight="1"
+                            android:background="@drawable/general_tboarder"
+                            android:gravity="center"
+                            android:textColor="@color/lightgray"
+                            android:textSize="13sp" />
+
+                        <TextView
+                            android:id="@+id/Gradetext13"
+                            android:layout_width="75dp"
+                            android:layout_height="wrap_content"
+                            android:layout_column="1"
+                            android:layout_weight="1"
+                            android:background="@drawable/general_tboarder"
+                            android:gravity="center"
+                            android:textColor="@color/lightgray"
+                            android:textSize="13sp" />
+
+                    </TableRow>
+
+                </TableLayout>
+
+            </LinearLayout>
+        </ScrollView>
+
+        <TextView
+            android:id="@+id/Gradesname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:text="Student Name"
+            android:textColor="@color/lightgray"
+            android:textSize="18sp"
+            android:textStyle="italic"
+            app:layout_constraintBottom_toBottomOf="@+id/Gradename"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/Gradename"
+            app:layout_constraintTop_toTopOf="@+id/Gradename"
+            app:layout_constraintVertical_bias="0.0" />
+
+    </android.support.constraint.ConstraintLayout>
+</FrameLayout>

@@ -1,0 +1,478 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".View_class">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#240b36"
+        tools:context=".View_class">
+
+        <Spinner
+            android:id="@+id/CLASSspin2"
+            android:layout_width="0dp"
+            android:layout_height="36dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:background="@drawable/spinner_border"
+            android:spinnerMode="dropdown"
+            app:layout_constraintBottom_toBottomOf="@+id/CLASStextView22"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/CLASStextView22"
+            app:layout_constraintTop_toTopOf="@+id/CLASStextView22"
+            tools:targetApi="kitkat">
+
+        </Spinner>
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="397dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="8dp"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/CLASSspin2">
+
+            <TableLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginBottom="8dp"
+                android:background="@drawable/general_tboarder"
+                android:gravity="start"
+                android:stretchColumns="1"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="parent"
+                app:layout_constraintVertical_bias="0.49">
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="66dp"
+                    android:divider="@color/white"
+                    android:weightSum="4">
+
+                    <TextView
+                        android:id="@+id/CLASStextView5"
+                        android:layout_width="194dp"
+                        android:layout_height="51dp"
+                        android:layout_column="0"
+                        android:layout_weight="1"
+                        android:background="@drawable/general_tboarder"
+                        android:gravity="center"
+                        android:text="Period"
+                        android:textColor="@color/white"
+                        android:textSize="17sp"
+                        android:textStyle="bold|italic" />
+
+                    <TextView
+                        android:id="@+id/CLASStextView14"
+                        android:layout_width="168dp"
+                        android:layout_height="match_parent"
+                        android:layout_column="1"
+                        android:layout_weight="1"
+                        android:background="@drawable/general_tboarder"
+                        android:gravity="center"
+                        android:text="2:00 - 4:00"
+                        android:textColor="@color/white"
+                        android:textSize="14sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/CLASStextView13"
+                        android:layout_width="170dp"
+                        android:layout_height="match_parent"
+                        android:layout_column="2"
+                        android:layout_weight="1"
+                        android:background="@drawable/general_tboarder"
+                        android:gravity="center"
+                        android:text="4:00 - 6:00"
+                        android:textColor="@color/white"
+                        android:textSize="14sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/CLASStextView12"
+                        android:layout_width="168dp"
+                        android:layout_height="match_parent"
+                        android:layout_column="3"
+                        android:layout_weight="1"
+                        android:background="@drawable/general_tboarder"
+                        android:gravity="center"
+                        android:text="7:00 - 9:00"
+                        android:textColor="@color/white"
+                        android:textSize="14sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/CLASStextView19"
+                        android:layout_width="79dp"
+                        android:layout_height="match_parent"
+                        android:layout_column="4"
+                        android:layout_weight="1"
+                        android:background="@drawable/general_tboarder"
+                        android:gravity="center"
+                        android:text="9:00 - 11:00"
+                        android:textColor="@color/white"
+                        android:textSize="14sp"
+                        android:textStyle="bold" />
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:divider="@color/white">
+
+                    <TextView
+                        android:id="@+id/CLASStextView8"
+                        android:layout_width="101dp"
+                        android:layout_height="51dp"
+                        android:layout_column="0"
+                        android:layout_weight="1"
+                        android:background="@drawable/general_tboarder"
+                        android:gravity="center"
+                        android:text="Monday"
+                        android:textColor="@color/white"
+                        android:textSize="17sp"
+                        android:textStyle="bold|italic" />
+
+                    <TextView
+                        android:id="@+id/CLASStextView9"
+                        android:layout_width="81dp"
+                        android:layout_height="match_parent"
+                        android:layout_column="1"
+                        android:layout_weight="1"
+                        android:background="@drawable/general_tboarder"
+                        android:gravity="center"
+                        android:textColor="@color/lightgray"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/CLASStextView15"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_column="2"
+                        android:layout_weight="1"
+                        android:background="@drawable/general_tboarder"
+                        android:gravity="center"
+                        android:textColor="@color/lightgray"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/CLASStextView16"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_column="3"
+                        android:layout_weight="1"
+                        android:background="@drawable/general_tboarder"
+                        android:gravity="center"
+                        android:textColor="@color/lightgray"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/CLASStextView20"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_column="4"
+                        android:background="@drawable/general_tboarder"
+                        android:gravity="center"
+                        android:textColor="@color/lightgray"
+                        android:textSize="12sp" />
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:divider="@color/white">
+
+                    <TextView
+                        android:id="@+id/CLASStextView28"
+                        android:layout_width="101dp"
+                        android:layout_height="51dp"
+                        android:layout_column="0"
+                        android:layout_weight="1"
+                        android:background="@drawable/general_tboarder"
+                        android:gravity="center"
+                        android:text="Tuesday"
+                        android:textColor="@color/white"
+                        android:textSize="17sp"
+                        android:textStyle="bold|italic" />
+
+                    <TextView
+                        android:id="@+id/CLASStextView29"
+                        android:layout_width="81dp"
+                        android:layout_height="match_parent"
+                        android:layout_column="1"
+                        android:layout_weight="1"
+                        android:background="@drawable/general_tboarder"
+                        android:gravity="center"
+                        android:textColor="@color/lightgray"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/CLASStextView25"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_column="2"
+                        android:layout_weight="1"
+                        android:background="@drawable/general_tboarder"
+                        android:gravity="center"
+                        android:textColor="@color/lightgray"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/CLASStextView26"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_column="3"
+                        android:layout_weight="1"
+                        android:background="@drawable/general_tboarder"
+                        android:gravity="center"
+                        android:textColor="@color/lightgray"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/CLASStextView21"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_column="4"
+                        android:background="@drawable/general_tboarder"
+                        android:gravity="center"
+                        android:textColor="@color/lightgray"
+                        android:textSize="12sp" />
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:divider="@color/white">
+
+                    <TextView
+                        android:id="@+id/CLASStextView38"
+                        android:layout_width="101dp"
+                        android:layout_height="51dp"
+                        android:layout_column="0"
+                        android:layout_weight="1"
+                        android:background="@drawable/general_tboarder"
+                        android:gravity="center"
+                        android:text="Wednesday"
+                        android:textColor="@color/white"
+                        android:textSize="17sp"
+                        android:textStyle="bold|italic" />
+
+                    <TextView
+                        android:id="@+id/CLASStextView39"
+                        android:layout_width="81dp"
+                        android:layout_height="match_parent"
+                        android:layout_column="1"
+                        android:layout_weight="1"
+                        android:background="@drawable/general_tboarder"
+                        android:gravity="center"
+                        android:textColor="@color/lightgray"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/CLASStextView35"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_column="2"
+                        android:layout_weight="1"
+                        android:background="@drawable/general_tboarder"
+                        android:gravity="center"
+                        android:textColor="@color/lightgray"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/CLASStextView36"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_column="3"
+                        android:layout_weight="1"
+                        android:background="@drawable/general_tboarder"
+                        android:gravity="center"
+                        android:textColor="@color/lightgray"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/CLASStextView31"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_column="4"
+                        android:background="@drawable/general_tboarder"
+                        android:gravity="center"
+                        android:textColor="@color/lightgray"
+                        android:textSize="12sp" />
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:divider="@color/white">
+
+                    <TextView
+                        android:id="@+id/CLASStextView48"
+                        android:layout_width="101dp"
+                        android:layout_height="51dp"
+                        android:layout_column="0"
+                        android:layout_weight="1"
+                        android:background="@drawable/general_tboarder"
+                        android:gravity="center"
+                        android:text="Thursday"
+                        android:textColor="@color/white"
+                        android:textSize="17sp"
+                        android:textStyle="bold|italic" />
+
+                    <TextView
+                        android:id="@+id/CLASStextView49"
+                        android:layout_width="81dp"
+                        android:layout_height="match_parent"
+                        android:layout_column="1"
+                        android:layout_weight="1"
+                        android:background="@drawable/general_tboarder"
+                        android:gravity="center"
+                        android:textColor="@color/lightgray"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/CLASStextView45"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_column="2"
+                        android:layout_weight="1"
+                        android:background="@drawable/general_tboarder"
+                        android:gravity="center"
+                        android:textColor="@color/lightgray"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/CLASStextView46"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_column="3"
+                        android:layout_weight="1"
+                        android:background="@drawable/general_tboarder"
+                        android:gravity="center"
+                        android:textColor="@color/lightgray"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/CLASStextView40"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_column="4"
+                        android:background="@drawable/general_tboarder"
+                        android:gravity="center"
+                        android:textColor="@color/lightgray"
+                        android:textSize="12sp" />
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:divider="@color/white">
+
+                    <TextView
+                        android:id="@+id/CLASStextView58"
+                        android:layout_width="101dp"
+                        android:layout_height="51dp"
+                        android:layout_column="0"
+                        android:layout_weight="1"
+                        android:background="@drawable/general_tboarder"
+                        android:gravity="center"
+                        android:text="Friday"
+                        android:textColor="@color/white"
+                        android:textSize="17sp"
+                        android:textStyle="bold|italic" />
+
+                    <TextView
+                        android:id="@+id/CLASStextView59"
+                        android:layout_width="81dp"
+                        android:layout_height="match_parent"
+                        android:layout_column="1"
+                        android:layout_weight="1"
+                        android:background="@drawable/general_tboarder"
+                        android:gravity="center"
+                        android:textColor="@color/lightgray"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/CLASStextView55"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_column="2"
+                        android:layout_weight="1"
+                        android:background="@drawable/general_tboarder"
+                        android:gravity="center"
+                        android:textColor="@color/lightgray"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/CLASStextView56"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_column="3"
+                        android:layout_weight="1"
+                        android:background="@drawable/general_tboarder"
+                        android:gravity="center"
+                        android:textColor="@color/lightgray"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/CLASStextView50"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_column="4"
+                        android:background="@drawable/general_tboarder"
+                        android:gravity="center"
+                        android:textColor="@color/lightgray"
+                        android:textSize="12sp" />
+
+                </TableRow>
+
+            </TableLayout>
+
+            <TextView
+                android:id="@+id/CLASStextView23"
+                android:layout_width="324dp"
+                android:layout_height="121dp"
+                android:layout_gravity="bottom|center"
+                android:layout_marginTop="24dp"
+                android:gravity="center"
+                android:text="Disclaimer!!\nThis Tab is Experimental and only works for students who are Enrolled in\nDepartment of Information Technology\n4th year on 2011 "
+                android:textColor="@color/lightgray"
+                android:textSize="18sp" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/CLASStextView22"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="24dp"
+            android:gravity="center"
+            android:text="Select Section :"
+            android:textColor="@color/white"
+            android:textSize="17sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </android.support.constraint.ConstraintLayout>
+</FrameLayout>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@color/lightgray">
+    <group android:checkableBehavior="single">
+        <item android:id="@+id/intro"
+            android:title="Home"
+            android:icon="@drawable/ic_info_outline_black_24dp"/>
+        <item android:id="@+id/view_ass"
+            android:title="View Assessment"
+            android:icon="@drawable/ic_assessment_black_24dp"/>
+        <item android:id="@+id/view_grade"
+            android:title="View Grade"
+            android:icon="@drawable/ic_grade_black_24dp"/>
+        <item android:id="@+id/view_weekly"
+            android:title="Weekly Schedule"
+            android:icon="@drawable/ic_schedule_black_24dp"/>
+        <item android:id="@+id/view_class"
+            android:title="Class Schedule"
+            android:icon="@drawable/ic_class_black_24dp"/>
+        <item android:id="@+id/dorm"
+            android:title="My Dormitory"
+            android:icon="@drawable/ic_dorm_black_24dp"/>
+        <item android:id="@+id/clear"
+            android:title="Clearance"
+            android:icon="@drawable/ic_clear_black_24dp"/>
+        <item android:id="@+id/spell"
+            android:title="Spelling Correction"
+            android:icon="@drawable/ic_spellcheck_black_24dp"/>
+    </group>
+    <item android:id="@+id/logout"
+        android:title="Logout"
+        android:icon="@drawable/ic_logout_black_24dp"/>
+</menu>

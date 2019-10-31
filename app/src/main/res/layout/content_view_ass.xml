@@ -1,0 +1,358 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/frameLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ViewGrade">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#240b36"
+        tools:context=".ViewGrade">
+
+        <TextView
+            android:id="@+id/ASSidnum"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="8dp"
+            android:text="ID : "
+            android:textColor="@color/white"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/ASSsname"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.032"
+            app:layout_constraintStart_toEndOf="@+id/ASSsname"
+            app:layout_constraintTop_toTopOf="@+id/ASSsname"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <TextView
+            android:id="@+id/ASSname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="40dp"
+            android:text="Name :"
+            android:textColor="@color/white"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/ASSsname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:text="Student name"
+            android:textColor="@color/lightgray"
+            android:textSize="18dp"
+            android:textStyle="italic"
+            app:layout_constraintBottom_toBottomOf="@+id/ASSname"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.022"
+            app:layout_constraintStart_toEndOf="@+id/ASSname"
+            app:layout_constraintTop_toTopOf="@+id/ASSname"
+            app:layout_constraintVertical_bias="1.0" />
+
+        <TextView
+            android:id="@+id/ASStextView7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="36dp"
+            android:text="Term :"
+            android:textColor="@color/white"
+            android:textColorHighlight="@color/colorPrimary"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="@+id/ASSname"
+            app:layout_constraintTop_toBottomOf="@+id/ASSname" />
+
+        <Spinner
+            android:id="@+id/ASSspin2"
+            android:layout_width="293dp"
+            android:layout_height="39dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="8dp"
+            android:background="@drawable/spinner_border"
+            android:spinnerMode="dropdown"
+            app:layout_constraintBottom_toBottomOf="@+id/textView7"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/ASStextView7"
+            app:layout_constraintTop_toTopOf="@+id/ASStextView7"
+            app:layout_constraintVertical_bias="0.0"
+            tools:targetApi="lollipop">
+
+        </Spinner>
+
+        <Spinner
+            android:id="@+id/ASSspin3"
+            android:layout_width="282dp"
+            android:layout_height="39dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/spinner_border_dark"
+            android:spinnerMode="dropdown"
+            android:visibility="visible"
+            app:layout_constraintEnd_toEndOf="@+id/ASSspin2"
+            app:layout_constraintStart_toEndOf="@+id/ASStextView17"
+            app:layout_constraintTop_toBottomOf="@+id/ASSspin2"
+            tools:targetApi="lollipop">
+
+        </Spinner>
+
+        <Button
+            android:id="@+id/vg_btn"
+            android:layout_width="193dp"
+            android:layout_height="49dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginEnd="8dp"
+            android:background="@drawable/btn_bg"
+            android:text="Show My Assignment"
+            android:textColor="@color/white"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.935"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/ASSspin3" />
+
+        <ScrollView
+            android:id="@+id/scrollView2"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/ASStextView29"
+            android:scrollbars = "vertical"
+            android:scrollbarStyle="insideInset">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TableLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginBottom="8dp"
+                    android:background="@drawable/general_tboarder"
+                    android:gravity="start"
+                    android:stretchColumns="1"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/vg_btn"
+                    app:layout_constraintVertical_bias="0.49">
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="66dp"
+                        android:divider="@color/white"
+                        android:weightSum="4">
+
+                        <TextView
+                            android:id="@+id/ASStextView5"
+                            android:layout_width="192dp"
+                            android:layout_height="51dp"
+                            android:layout_column="0"
+                            android:layout_weight="1"
+                            android:background="@drawable/general_tboarder"
+                            android:gravity="center"
+                            android:text="Course"
+                            android:textColor="@color/white"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/ASStextView14"
+                            android:layout_width="217dp"
+                            android:layout_height="match_parent"
+                            android:layout_column="1"
+                            android:layout_weight="1"
+                            android:background="@drawable/general_tboarder"
+                            android:gravity="center"
+                            android:text="Assignment"
+                            android:textColor="@color/white"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/ASStextView13"
+                            android:layout_width="170dp"
+                            android:layout_height="match_parent"
+                            android:layout_column="2"
+                            android:layout_weight="1"
+                            android:background="@drawable/general_tboarder"
+                            android:gravity="center"
+                            android:text="Grade"
+                            android:textColor="@color/white"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/ASStextView12"
+                            android:layout_width="162dp"
+                            android:layout_height="match_parent"
+                            android:layout_column="3"
+                            android:layout_weight="1"
+                            android:background="@drawable/general_tboarder"
+                            android:gravity="center"
+                            android:text="Out of\n100"
+                            android:textColor="@color/white"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:divider="@color/white">
+
+                        <TextView
+                            android:id="@+id/ASStextView8"
+                            android:layout_width="72dp"
+                            android:layout_height="match_parent"
+                            android:layout_column="0"
+                            android:layout_weight="1"
+                            android:background="@drawable/general_tboarder"
+                            android:gravity="center"
+                            android:paddingTop="4dp"
+                            android:textColor="@color/white"
+                            android:textSize="13sp" />
+
+                        <TextView
+                            android:id="@+id/ASStextView9"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_column="1"
+                            android:layout_weight="1"
+                            android:background="@drawable/general_tboarder"
+                            android:gravity="center"
+                            android:paddingTop="4dp"
+                            android:textColor="@color/lightgray"
+                            android:textSize="13sp" />
+
+                        <TextView
+                            android:id="@+id/ASStextView15"
+                            android:layout_width="21dp"
+                            android:layout_height="match_parent"
+                            android:layout_column="2"
+                            android:layout_weight="1"
+                            android:background="@drawable/general_tboarder"
+                            android:gravity="center"
+                            android:paddingTop="4dp"
+                            android:textColor="@color/lightgray"
+                            android:textSize="13sp" />
+
+                        <TextView
+                            android:id="@+id/ASStextView16"
+                            android:layout_width="21dp"
+                            android:layout_height="match_parent"
+                            android:layout_column="3"
+                            android:layout_weight="1"
+                            android:background="@drawable/general_tboarder"
+                            android:gravity="center"
+                            android:paddingTop="4dp"
+                            android:textColor="@color/lightgray"
+                            android:textSize="13sp" />
+                    </TableRow>
+
+                    <TableRow android:weightSum="1">
+
+                        <TextView
+                            android:id="@+id/ASStextView11"
+                            android:layout_width="21dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:background="@drawable/general_tboarder"
+                            android:gravity="center"
+                            android:paddingTop="4dp"
+                            android:textColor="@color/white"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+                    </TableRow>
+
+                </TableLayout>
+            </LinearLayout>
+        </ScrollView>
+
+        <TextView
+            android:id="@+id/ASStextView17"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:text="Courses :"
+            android:textColor="@color/white"
+            android:textColorHighlight="@color/colorPrimary"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/ASSspin3"
+            app:layout_constraintEnd_toStartOf="@+id/ASSspin3"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/ASSspin3" />
+
+        <TextView
+            android:id="@+id/ASStextView18"
+            android:layout_width="343dp"
+            android:layout_height="61dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="14dp"
+            android:layout_marginEnd="8dp"
+            android:gravity="center"
+            android:text="After You've Chosen the Term you can select a Course you would like to see the assignment of and Press 'Show My Assignment'"
+            android:textColor="@color/lightgray"
+            android:textSize="13sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/vg_btn" />
+
+        <TextView
+            android:id="@+id/ASStextView29"
+            android:layout_width="343dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="8dp"
+            android:gravity="center"
+            android:text="All of Your Assessment"
+            android:textColor="@color/white"
+            android:textSize="17sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/ASStextView18" />
+
+        <TextView
+            android:id="@+id/ASSsid"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="8dp"
+            android:text="TextView"
+            android:textColor="@color/lightgray"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toBottomOf="@+id/idnum"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.157"
+            app:layout_constraintStart_toEndOf="@+id/ASSidnum"
+            app:layout_constraintTop_toTopOf="@+id/ASSidnum" />
+
+
+    </android.support.constraint.ConstraintLayout>
+</FrameLayout>

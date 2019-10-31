@@ -1,0 +1,536 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Dorm">
+
+    <android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#240b36"
+        tools:context=".Dorm">
+
+        <TextView
+            android:id="@+id/DORMidnum"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="8dp"
+            android:text="ID : "
+            android:textColor="@color/white"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/DORMsname"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/DORMsid"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="8dp"
+            android:text="Student ID"
+            android:textColor="@color/lightgray"
+            android:textSize="18dp"
+            android:textStyle="italic"
+            app:layout_constraintBottom_toBottomOf="@+id/DORMidnum"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/DORMidnum"
+            app:layout_constraintTop_toTopOf="@+id/DORMidnum"
+            app:layout_constraintVertical_bias="1.0" />
+
+        <TextView
+            android:id="@+id/DORMname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:text="Name : "
+            android:textColor="@color/white"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/DORMsname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:text="Student name"
+            android:textColor="@color/lightgray"
+            android:textSize="18dp"
+            android:textStyle="italic"
+            app:layout_constraintBottom_toBottomOf="@+id/DORMname"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.032"
+            app:layout_constraintStart_toEndOf="@+id/DORMname"
+            app:layout_constraintTop_toTopOf="@+id/DORMname" />
+
+        <ScrollView
+            android:id="@+id/DORMscrollView2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="8dp"
+            android:isScrollContainer="true"
+            android:overScrollMode="ifContentScrolls"
+            android:scrollbarStyle="insideInset"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.333"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/DORMsname"
+            app:layout_constraintVertical_bias="0.206">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TableLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginBottom="8dp"
+                    android:background="@drawable/general_tboarder"
+                    android:gravity="start"
+                    android:stretchColumns="1"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintVertical_bias="0.49">
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="66dp"
+                        android:divider="@color/white"
+                        android:weightSum="6">
+
+                        <TextView
+                            android:id="@+id/DORMtextView5"
+                            android:layout_width="79dp"
+                            android:layout_height="51dp"
+                            android:layout_column="0"
+                            android:layout_weight="1"
+                            android:background="@drawable/general_tboarder"
+                            android:gravity="center"
+                            android:text="From\nDate"
+                            android:textColor="@color/white"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/DORMtextView14"
+                            android:layout_width="64dp"
+                            android:layout_height="match_parent"
+                            android:layout_column="1"
+                            android:layout_weight="1"
+                            android:background="@drawable/general_tboarder"
+                            android:gravity="center"
+                            android:text="Status"
+                            android:textColor="@color/white"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/DORMtextView13"
+                            android:layout_width="72dp"
+                            android:layout_height="match_parent"
+                            android:layout_column="2"
+                            android:layout_weight="1"
+                            android:background="@drawable/general_tboarder"
+                            android:gravity="center"
+                            android:text="Campus"
+                            android:textColor="@color/white"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/DORMtextView12"
+                            android:layout_width="66dp"
+                            android:layout_height="match_parent"
+                            android:layout_column="3"
+                            android:layout_weight="1"
+                            android:background="@drawable/general_tboarder"
+                            android:gravity="center"
+                            android:text="Dorm\nID"
+                            android:textColor="@color/white"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/DORMtext1"
+                            android:layout_width="56dp"
+                            android:layout_height="match_parent"
+                            android:layout_column="4"
+                            android:layout_weight="1"
+                            android:background="@drawable/general_tboarder"
+                            android:gravity="center"
+                            android:text="Room"
+                            android:textColor="@color/white"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/DORMtext2"
+                            android:layout_width="48dp"
+                            android:layout_height="match_parent"
+                            android:layout_column="5"
+                            android:layout_weight="1"
+                            android:background="@drawable/general_tboarder"
+                            android:gravity="center"
+                            android:text="Bed"
+                            android:textColor="@color/white"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:divider="@color/white"
+                        android:weightSum="6">
+
+                        <TextView
+                            android:id="@+id/DORMtextView8"
+                            android:layout_width="105dp"
+                            android:layout_height="match_parent"
+                            android:layout_column="0"
+                            android:layout_weight="1"
+                            android:background="@drawable/general_tboarder"
+                            android:gravity="center"
+                            android:paddingTop="4dp"
+                            android:textColor="@color/lightgray"
+                            android:textSize="13sp" />
+
+                        <TextView
+                            android:id="@+id/DORMtextView9"
+                            android:layout_width="66dp"
+                            android:layout_height="match_parent"
+                            android:layout_column="1"
+                            android:layout_weight="1"
+                            android:background="@drawable/general_tboarder"
+                            android:gravity="center"
+                            android:paddingTop="4dp"
+                            android:textColor="@color/lightgray"
+                            android:textSize="13sp" />
+
+                        <TextView
+                            android:id="@+id/DORMtextView15"
+                            android:layout_width="44dp"
+                            android:layout_height="match_parent"
+                            android:layout_column="2"
+                            android:layout_weight="1"
+                            android:background="@drawable/general_tboarder"
+                            android:gravity="center"
+                            android:paddingTop="4dp"
+                            android:textColor="@color/lightgray"
+                            android:textSize="13sp" />
+
+                        <TextView
+                            android:id="@+id/DORMtextView16"
+                            android:layout_width="55dp"
+                            android:layout_height="match_parent"
+                            android:layout_column="3"
+                            android:layout_weight="1"
+                            android:background="@drawable/general_tboarder"
+                            android:gravity="center"
+                            android:paddingTop="4dp"
+                            android:textColor="@color/lightgray"
+                            android:textSize="13sp" />
+
+                        <TextView
+                            android:id="@+id/DORMtext3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_column="4"
+                            android:layout_weight="1"
+                            android:background="@drawable/general_tboarder"
+                            android:gravity="center"
+                            android:textColor="@color/lightgray"
+                            android:textSize="16sp" />
+
+                        <TextView
+                            android:id="@+id/DORMtext4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_column="5"
+                            android:layout_weight="1"
+                            android:background="@drawable/general_tboarder"
+                            android:gravity="center"
+                            android:textColor="@color/lightgray"
+                            android:textSize="16sp" />
+
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:divider="@color/white" />
+
+                </TableLayout>
+
+                <TableLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="12dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginBottom="8dp"
+                    android:background="@drawable/general_tboarder"
+                    android:gravity="bottom"
+                    android:stretchColumns="1"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintVertical_bias="0.49">
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="66dp"
+                        android:divider="@color/white"
+                        android:weightSum="4">
+
+                        <TextView
+                            android:id="@+id/DORMtext5"
+                            android:layout_width="195dp"
+                            android:layout_height="51dp"
+                            android:layout_column="0"
+                            android:layout_weight="1"
+                            android:background="@drawable/general_tboarder"
+                            android:gravity="center"
+                            android:text="Asset Description"
+                            android:textColor="@color/white"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/DORMtext14"
+                            android:layout_width="130dp"
+                            android:layout_height="match_parent"
+                            android:layout_column="1"
+                            android:layout_weight="1"
+                            android:background="@drawable/general_tboarder"
+                            android:gravity="center"
+                            android:text="Quantity"
+                            android:textColor="@color/white"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/DORMtext13"
+                            android:layout_width="131dp"
+                            android:layout_height="match_parent"
+                            android:layout_column="2"
+                            android:layout_weight="1"
+                            android:background="@drawable/general_tboarder"
+                            android:gravity="center"
+                            android:text="Asset\nCondition"
+                            android:textColor="@color/white"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/DORMtext12"
+                            android:layout_width="168dp"
+                            android:layout_height="match_parent"
+                            android:layout_column="3"
+                            android:layout_weight="1"
+                            android:background="@drawable/general_tboarder"
+                            android:gravity="center"
+                            android:text="Comment"
+                            android:textColor="@color/white"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:divider="@color/white">
+
+                        <TextView
+                            android:id="@+id/DORMtext8"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_column="0"
+                            android:layout_weight="1"
+                            android:background="@drawable/general_tboarder"
+                            android:gravity="center"
+                            android:paddingTop="4dp"
+                            android:textColor="@color/lightgray"
+                            android:textSize="13sp" />
+
+                        <TextView
+                            android:id="@+id/DORMtext9"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_column="1"
+                            android:layout_weight="1"
+                            android:background="@drawable/general_tboarder"
+                            android:gravity="center"
+                            android:paddingTop="4dp"
+                            android:textColor="@color/lightgray"
+                            android:textSize="13sp" />
+
+                        <TextView
+                            android:id="@+id/DORMtext15"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_column="2"
+                            android:layout_weight="1"
+                            android:background="@drawable/general_tboarder"
+                            android:gravity="center"
+                            android:paddingTop="4dp"
+                            android:textColor="@color/lightgray"
+                            android:textSize="13sp" />
+
+                        <TextView
+                            android:id="@+id/DORMtext16"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_column="3"
+                            android:layout_weight="1"
+                            android:background="@drawable/general_tboarder"
+                            android:gravity="center"
+                            android:paddingTop="4dp"
+                            android:textColor="@color/lightgray"
+                            android:textSize="13sp" />
+                    </TableRow>
+
+
+                </TableLayout>
+
+                <TableLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="12dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginBottom="8dp"
+                    android:background="@drawable/general_tboarder"
+                    android:gravity="bottom"
+                    android:stretchColumns="1"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintVertical_bias="0.49">
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="66dp"
+                        android:background="@drawable/general_tboarder"
+                        android:divider="@color/white"
+                        android:weightSum="3">
+
+                        <TextView
+                            android:id="@+id/DORMtxt"
+                            android:layout_width="195dp"
+                            android:layout_height="match_parent"
+                            android:layout_column="0"
+                            android:layout_weight="1"
+                            android:background="@drawable/general_tboarder"
+                            android:gravity="center"
+                            android:text="Asset Description"
+                            android:textColor="@color/white"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/DORMtxt2"
+                            android:layout_width="195dp"
+                            android:layout_height="match_parent"
+                            android:layout_column="0"
+                            android:layout_weight="1"
+                            android:background="@drawable/general_tboarder"
+                            android:gravity="center"
+                            android:text="Asset Issue Condition"
+                            android:textColor="@color/white"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/DORMtxt3"
+                            android:layout_width="195dp"
+                            android:layout_height="match_parent"
+                            android:layout_column="0"
+                            android:layout_weight="1"
+                            android:background="@drawable/general_tboarder"
+                            android:gravity="center"
+                            android:text="Return Date"
+                            android:textColor="@color/white"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:divider="@color/white">
+
+                        <TextView
+                            android:id="@+id/DORMtxt4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_column="0"
+                            android:layout_weight="1"
+                            android:background="@drawable/general_tboarder"
+                            android:gravity="center"
+                            android:paddingTop="4dp"
+                            android:textColor="@color/lightgray"
+                            android:textSize="13sp" />
+
+                        <TextView
+                            android:id="@+id/DORMtxt5"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_column="0"
+                            android:layout_weight="1"
+                            android:background="@drawable/general_tboarder"
+                            android:gravity="center"
+                            android:paddingTop="4dp"
+                            android:textColor="@color/lightgray"
+                            android:textSize="13sp" />
+
+                        <TextView
+                            android:id="@+id/DORMtxt6"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_column="0"
+                            android:layout_weight="1"
+                            android:background="@drawable/general_tboarder"
+                            android:gravity="center"
+                            android:paddingTop="4dp"
+                            android:textColor="@color/lightgray"
+                            android:textSize="13sp" />
+
+
+                    </TableRow>
+
+
+                </TableLayout>
+
+            </LinearLayout>
+        </ScrollView>
+
+    </android.support.constraint.ConstraintLayout>
+</FrameLayout>

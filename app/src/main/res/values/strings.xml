@@ -1,0 +1,42 @@
+<resources>
+    <string name="app_name">UoG SIS</string>
+    <string name="username">Username</string>
+    <string name="password">Password</string>
+    <string name="login">Login</string>
+    <string name="i_don_t_have_an_account">I don\'t have an account</string>
+    <string name="university_of_gondar_logo">University of Gondar logo</string>
+    <string name="forgot_password_don_t_have_account">Forgot Password / Don\'t Have Account</string>
+    <string name="got_it">Got it!</string>
+    <string name="Info">Hi...</string>
+    <string name="contact">Please contact the ICT administrators to get a new account or for resetting your forgotten password.</string>
+    <string name="fill_both">Please fill both Username and Password fields.</string>
+    <string name="note">Notice...</string>
+    <string name="user_agent">Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36</string>
+    <string name="form_url">http://10.139.8.225/psp/SIS/?cmd=login</string>
+    <string name="action_url">http://10.139.8.225/psp/SIS/?cmd=login&amp;languageCd=ENG</string>
+    <string name="tzone">-180</string>
+    <string name="try_again">Username or Password incorrect, please try again with a correct credential.</string>
+    <string name="error">Error...</string>
+    <string name="remember_me">Remember me</string>
+    <string name="check_lgn">a[href=\'http://10.139.8.225/psp/SIS/EMPLOYEE/HRMS/?cmd=logout\']</string>
+    <string name="title_activity_main_page">UoG SIS</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_base">UoG SIS</string>
+    <string name="open">Open</string>
+    <string name="close">Close</string>
+    <string name="title_activity_main">Home</string>
+    <string name="nameurl"><![CDATA[http://10.139.8.225/psp/SIS/EMPLOYEE/HRMS/c/SA_LEARNER_SERVICES.SSS_STUDENT_CENTER.GBL?Page=SSS_STUDENT_CENTER&Action=U]]></string>
+    <string-array name="termlist">
+        <item>term1</item>
+        <item>term2</item>
+        <item>term3</item>
+    </string-array>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

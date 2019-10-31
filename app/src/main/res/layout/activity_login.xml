@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_bg3"
+    tools:context=".login">
+
+
+    <CheckBox
+        android:id="@+id/Rmbme"
+        android:layout_width="159dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/pass"
+        android:layout_alignStart="@+id/pass"
+        android:layout_alignEnd="@+id/pass"
+        android:layout_marginBottom="24dp"
+        android:clickable="true"
+        android:enabled="true"
+        android:focusable="true"
+        android:text="@string/remember_me"
+        android:textColor="@color/cardview_light_background"
+        app:layout_constraintBottom_toTopOf="@+id/loginbtn"
+        app:layout_constraintEnd_toEndOf="@+id/pass"
+        app:layout_constraintStart_toStartOf="@+id/pass" />
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="251dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:contentDescription="@string/university_of_gondar_logo"
+        app:layout_constraintBottom_toTopOf="@+id/user"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.087"
+        app:srcCompat="@drawable/logo" />
+
+    <EditText
+        android:id="@+id/user"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_below="@+id/logo"
+        android:layout_alignStart="@+id/logo"
+        android:layout_alignEnd="@+id/logo"
+        android:layout_marginBottom="24dp"
+        android:background="#11000000"
+        android:drawableStart="@drawable/ic_action_user"
+        android:ems="10"
+        android:hint="@string/username"
+        android:importantForAutofill="no"
+        android:inputType="textPersonName"
+        android:textColor="#fff"
+        android:textColorHint="@android:color/darker_gray"
+        app:layout_constraintBottom_toTopOf="@+id/pass"
+        app:layout_constraintEnd_toEndOf="@+id/logo"
+        app:layout_constraintStart_toStartOf="@+id/logo"
+        tools:targetApi="o" />
+
+    <EditText
+        android:id="@+id/pass"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_below="@+id/user"
+        android:layout_alignStart="@+id/user"
+        android:layout_alignEnd="@+id/user"
+        android:layout_marginBottom="24dp"
+        android:background="#11000000"
+        android:drawableStart="@drawable/ic_action_pass"
+        android:ems="10"
+        android:hint="@string/password"
+        android:importantForAutofill="no"
+        android:inputType="textPassword"
+        android:textColor="#fff"
+        android:textColorHint="@android:color/darker_gray"
+        app:layout_constraintBottom_toTopOf="@+id/Rmbme"
+        app:layout_constraintEnd_toEndOf="@+id/user"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/user"
+        tools:targetApi="o" />
+
+    <Button
+        android:id="@+id/loginbtn"
+        android:layout_width="277dp"
+        android:layout_height="43dp"
+        android:layout_below="@+id/Rmbme"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="24dp"
+        android:background="@drawable/btn_bg"
+        android:text="@string/login"
+        android:textColor="#fff"
+        app:layout_constraintBottom_toTopOf="@+id/forgotpass"
+        app:layout_constraintEnd_toEndOf="@+id/Rmbme"
+        app:layout_constraintStart_toStartOf="@+id/Rmbme" />
+
+    <Button
+        android:id="@+id/forgotpass"
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/loginbtn"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="52dp"
+        android:background="@drawable/btn_bg"
+        android:text="@string/forgot_password_don_t_have_account"
+        android:textColor="@color/white"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</android.support.constraint.ConstraintLayout>

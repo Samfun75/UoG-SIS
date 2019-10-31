@@ -1,0 +1,436 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Spelling">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#240b36"
+        tools:context=".Spelling">
+
+        <TextView
+            android:id="@+id/CLEARidnum"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginEnd="16dp"
+            android:text="ID : "
+            android:textColor="@color/white"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@id/CLEARsname"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/CLEARsname"
+            app:layout_constraintTop_toTopOf="@+id/CLEARsname" />
+
+        <TextView
+            android:id="@+id/CLEARsid"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="8dp"
+            android:text="Student ID"
+            android:textColor="@color/lightgray"
+            android:textSize="18dp"
+            android:textStyle="italic"
+            app:layout_constraintBottom_toBottomOf="@+id/CLEARidnum"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/CLEARidnum"
+            app:layout_constraintTop_toTopOf="@+id/CLEARidnum"
+            app:layout_constraintVertical_bias="1.0" />
+
+        <TextView
+            android:id="@+id/CLEARname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="32dp"
+            android:text="Name : "
+            android:textColor="@color/white"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/CLEARsname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:text="Student name"
+            android:textColor="@color/lightgray"
+            android:textSize="18dp"
+            android:textStyle="italic"
+            app:layout_constraintBottom_toBottomOf="@+id/CLEARname"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.032"
+            app:layout_constraintStart_toEndOf="@+id/CLEARname"
+            app:layout_constraintTop_toTopOf="@+id/CLEARname"
+            app:layout_constraintVertical_bias="1.0" />
+
+        <TextView
+            android:id="@+id/CLEARtextView7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:layout_marginEnd="8dp"
+            android:text="Academic Year : "
+            android:textColor="@color/white"
+            android:textColorHighlight="@color/colorPrimary"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.064"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/CLEARidnum" />
+
+        <TextView
+            android:id="@+id/CLEARtextView34"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:textColor="@color/lightgray"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toBottomOf="@+id/CLEARtextView7"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/CLEARtextView7"
+            app:layout_constraintTop_toTopOf="@+id/CLEARtextView7" />
+
+        <TextView
+            android:id="@+id/CLEARtextView37"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="16dp"
+            android:text="Term : "
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="@+id/CLEARtextView7"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/CLEARtextView7" />
+
+        <TextView
+            android:id="@+id/CLEARtextView41"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:textColor="@color/lightgray"
+            android:textSize="14sp"
+            app:layout_constraintBottom_toBottomOf="@+id/CLEARtextView37"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/CLEARtextView37"
+            app:layout_constraintTop_toTopOf="@+id/CLEARtextView37" />
+
+        <TextView
+            android:id="@+id/CLEARtextView42"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="24dp"
+            android:text="Effective Date  : "
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="@+id/CLEARtextView37"
+            app:layout_constraintHorizontal_bias="0.891"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/CLEARbutton6" />
+
+        <TextView
+            android:id="@+id/CLEARtextView43"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:textColor="@color/lightgray"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toBottomOf="@+id/CLEARtextView42"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.053"
+            app:layout_constraintStart_toEndOf="@+id/CLEARtextView42"
+            app:layout_constraintTop_toTopOf="@+id/CLEARtextView42" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="8dp"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/CLEARtextView42">
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="start">
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/CLEARtextView44"
+                        android:layout_width="275dp"
+                        android:layout_height="40dp"
+                        android:layout_column="0"
+                        android:layout_weight="1"
+                        android:background="@drawable/general_tboarder"
+                        android:gravity="center"
+                        android:text="Approver"
+                        android:textColor="@color/white"
+                        android:textSize="17sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/CLEARtextView47"
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:layout_column="1"
+                        android:layout_weight="1"
+                        android:background="@drawable/general_tboarder"
+                        android:gravity="center"
+                        android:text="Approve"
+                        android:textColor="@color/white"
+                        android:textSize="17sp"
+                        android:textStyle="bold" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/CLEARtextView48"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_column="0"
+                        android:layout_weight="1"
+                        android:background="@drawable/general_tboarder"
+                        android:textColor="@color/lightgray" />
+
+                    <TextView
+                        android:id="@+id/CLEARtextView49"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_column="1"
+                        android:layout_weight="1"
+                        android:background="@drawable/general_tboarder"
+                        android:textAlignment="center"
+                        android:textColor="@color/lightgray" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/CLEARtextView50"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_column="0"
+                        android:layout_weight="1"
+                        android:background="@drawable/general_tboarder"
+                        android:textColor="@color/lightgray" />
+
+                    <TextView
+                        android:id="@+id/CLEARtextView51"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_column="1"
+                        android:layout_weight="1"
+                        android:background="@drawable/general_tboarder"
+                        android:textAlignment="center"
+                        android:textColor="@color/lightgray" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/CLEARtextView52"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_column="0"
+                        android:layout_weight="1"
+                        android:background="@drawable/general_tboarder"
+                        android:textColor="@color/lightgray" />
+
+                    <TextView
+                        android:id="@+id/CLEARtextView53"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_column="1"
+                        android:layout_weight="1"
+                        android:background="@drawable/general_tboarder"
+                        android:textAlignment="center"
+                        android:textColor="@color/lightgray" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/CLEARtextView54"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_column="0"
+                        android:layout_weight="1"
+                        android:background="@drawable/general_tboarder"
+                        android:textColor="@color/lightgray" />
+
+                    <TextView
+                        android:id="@+id/CLEARtextView55"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_column="1"
+                        android:layout_weight="1"
+                        android:background="@drawable/general_tboarder"
+                        android:textAlignment="center"
+                        android:textColor="@color/lightgray" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/CLEARtextView56"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_column="0"
+                        android:layout_weight="1"
+                        android:background="@drawable/general_tboarder"
+                        android:textColor="@color/lightgray" />
+
+                    <TextView
+                        android:id="@+id/CLEARtextView57"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_column="1"
+                        android:layout_weight="1"
+                        android:background="@drawable/general_tboarder"
+                        android:textAlignment="center"
+                        android:textColor="@color/lightgray" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/CLEARtextView58"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_column="0"
+                        android:layout_weight="1"
+                        android:background="@drawable/general_tboarder"
+                        android:textColor="@color/lightgray" />
+
+                    <TextView
+                        android:id="@+id/CLEARtextView59"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_column="1"
+                        android:layout_weight="1"
+                        android:background="@drawable/general_tboarder"
+                        android:textAlignment="center"
+                        android:textColor="@color/lightgray" />
+                </TableRow>
+            </TableLayout>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/CLEARbutton6"
+            android:layout_width="163dp"
+            android:layout_height="45dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="32dp"
+            android:layout_marginEnd="8dp"
+            android:background="@drawable/btn_bg"
+            android:text="Request Clearance"
+            android:textColor="@color/white"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/CLEARtextView37"
+            app:layout_constraintTop_toBottomOf="@id/CLEARtextView10" />
+
+        <TextView
+            android:id="@+id/CLEARtextView5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="16dp"
+            android:text="Academic Group: "
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="@+id/CLEARtextView37"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/CLEARtextView37" />
+
+        <TextView
+            android:id="@+id/CLEARtextView6"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:textColor="@color/lightgray"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toBottomOf="@+id/CLEARtextView5"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/CLEARtextView5"
+            app:layout_constraintTop_toTopOf="@+id/CLEARtextView5" />
+
+        <TextView
+            android:id="@+id/CLEARtextView9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="16dp"
+            android:text="Academic Plan: "
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="@+id/CLEARtextView5"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/CLEARtextView5" />
+
+        <TextView
+            android:id="@+id/CLEARtextView10"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="8dp"
+            android:textColor="@color/lightgray"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/CLEARtextView9"
+            app:layout_constraintTop_toBottomOf="@+id/CLEARtextView6" />
+
+    </android.support.constraint.ConstraintLayout>
+</FrameLayout>

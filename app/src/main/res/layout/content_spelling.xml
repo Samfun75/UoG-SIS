@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Spelling">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#240b36"
+        tools:context=".Spelling">
+
+        <TextView
+            android:id="@+id/SPELLidnum"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginEnd="8dp"
+            android:text="Campus ID :"
+            android:textColor="@color/white"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.34"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/webView" />
+
+        <TextView
+            android:id="@+id/SPELLsid"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="8dp"
+            android:text="Student ID"
+            android:textColor="@color/lightgray"
+            android:textSize="18dp"
+            android:textStyle="italic"
+            app:layout_constraintBottom_toBottomOf="@+id/SPELLidnum"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/SPELLidnum"
+            app:layout_constraintTop_toTopOf="@+id/SPELLidnum"
+            app:layout_constraintVertical_bias="1.0" />
+
+        <TextView
+            android:id="@+id/SPELLname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="24dp"
+            android:text="English :"
+            android:textColor="@color/white"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="@+id/SPELLidnum"
+            app:layout_constraintHorizontal_bias="0.055"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/SPELLtextView60" />
+
+        <EditText
+            android:id="@+id/SPELLEng"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:background="@drawable/general_tboarder"
+            android:enabled="false"
+            android:text="Student name"
+            android:textColor="@color/lightgray"
+            android:textSize="18dp"
+            android:textStyle="italic"
+            app:layout_constraintBottom_toBottomOf="@+id/SPELLname"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.055"
+            app:layout_constraintStart_toEndOf="@+id/SPELLname"
+            app:layout_constraintTop_toTopOf="@+id/SPELLname"
+            app:layout_constraintVertical_bias="0.333" />
+
+        <TextView
+            android:id="@+id/SPELLtextView24"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="16dp"
+            android:text="Amharic :"
+            android:textColor="@color/white"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="@+id/SPELLname"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/SPELLname" />
+
+        <EditText
+            android:id="@+id/SPELLAmh"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:background="@drawable/general_tboarder"
+            android:enabled="false"
+            android:text="Amharic name"
+            android:textColor="@color/lightgray"
+            android:textSize="18dp"
+            app:layout_constraintBottom_toBottomOf="@+id/SPELLtextView24"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/SPELLtextView24"
+            app:layout_constraintTop_toTopOf="@+id/SPELLtextView24"
+            app:layout_constraintVertical_bias="0.478" />
+
+        <TextView
+            android:id="@+id/SPELLtextView33"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginEnd="8dp"
+            android:text="Spelling Correction in name?"
+            android:textColor="@color/white"
+            android:textSize="20dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/SPELLAmh" />
+
+        <Switch
+            android:id="@+id/switch1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:textOff="No"
+            android:textOn="Yes"
+            app:layout_constraintEnd_toEndOf="@+id/SPELLtextView33"
+            app:layout_constraintStart_toStartOf="@+id/SPELLtextView33"
+            app:layout_constraintTop_toBottomOf="@+id/SPELLtextView33" />
+
+        <Button
+            android:id="@+id/button5"
+            android:layout_width="158dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="8dp"
+            android:background="@drawable/btn_bg"
+            android:text="Submit"
+            android:textColor="@color/white"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/switch1"
+            app:layout_constraintHorizontal_bias="0.508"
+            app:layout_constraintStart_toStartOf="@+id/switch1"
+            app:layout_constraintTop_toBottomOf="@+id/switch1"
+            app:layout_constraintVertical_bias="0.051" />
+
+        <TextView
+            android:id="@+id/SPELLtextView60"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginEnd="8dp"
+            android:text="Name"
+            android:textColor="@color/white"
+            android:textSize="24sp"
+            android:textStyle="bold|italic"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/SPELLidnum" />
+
+        <WebView
+            android:id="@+id/webView"
+            style="@android:style/Widget.DeviceDefault.Light.WebView"
+            android:layout_width="185dp"
+            android:layout_height="214dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="8dp"
+            android:animateLayoutChanges="true"
+            android:animationCache="true"
+            android:clickable="false"
+            android:contentDescription="Student Photo"
+            android:isScrollContainer="true"
+            android:longClickable="false"
+            android:orientation="vertical"
+            android:overScrollMode="ifContentScrolls"
+            android:persistentDrawingCache="scrolling"
+            android:scrollbars="horizontal|vertical"
+            android:verticalScrollbarPosition="defaultPosition"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </android.support.constraint.ConstraintLayout>
+</FrameLayout>
